@@ -13,6 +13,7 @@ jobs:
 
     - name: Preinstall
       run: |
+        sudo apt update
         sudo apt install mingw-w64 make gcc g++ g++-mingw-w64
 
         wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz -O /tmp/go1.25.4.linux-amd64.tar.gz
